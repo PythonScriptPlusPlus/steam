@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Beaver media</title>
+	</head>
+	<body style="margin: 0;">
+		<h1 style="margin: 0; padding-left: 10px;  background-color: brown; color: white;">Бобриная сеть</h1>
+		<div style="margin-left: 40%; width: 20%; text-align: center; margin-top: 25px;">
+			<input type="" name="" placeholder="Email" style="margin-top: 10px" id="email">
+			<input type="password" name="password" placeholder="Пароль" style="margin-top: 10px" id="password">
+		</div>
+		<button style="margin-top: 50px; margin-left: 42%; width: 16%" id="but1">Войти</button>
+
+		<div style="margin-top: 50px; margin-left: 45%; width: 10%" id="result"></div>
+	</body>
+	<script type="text/javascript">
+        function fortnite() {
+            var login = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            var html = 'Ваш логин: ' + login + '<br>'+ ' Ваш пароль: ' + password;
+
+            document.getElementById('result').innerHTML = html;
+
+        }
+
+        document.getElementById('but1').addEventListener('click', fortnite);
+
+    </script>
+</html>
